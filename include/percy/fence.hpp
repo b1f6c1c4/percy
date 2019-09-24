@@ -6,10 +6,10 @@
 #include <cassert>
 #include <memory>
 #include <functional>
-#include "concurrentqueue.h"
 #include <cmath>
 #include <thread>
 #include <percy/spec.hpp>
+#include <concurrentqueue/concurrentqueue.h>
 
 /*******************************************************************************
     Definitions of Boolean fences and fence filters and generators.

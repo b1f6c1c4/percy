@@ -5,9 +5,9 @@
 #include <functional>
 #include <mutex>
 #include "tt_utils.hpp"
-#include "concurrentqueue.h"
 #include "solvers.hpp"
 #include <vector>
+#include <concurrentqueue/concurrentqueue.h>
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wunused-parameter"

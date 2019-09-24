@@ -10,7 +10,6 @@
 #include "mig.hpp"
 #include "dag_generation.hpp"
 #include "tt_utils.hpp"
-#include "concurrentqueue.h"
 #include "partial_dag.hpp"
 #include "generators/partial_dag_generator.hpp"
 #include "generators/partial_dag3_generator.hpp"
@@ -18,6 +17,7 @@
 #include "encoders.hpp"
 #include "cnf.hpp"
 #include <limits>
+#include <concurrentqueue/concurrentqueue.h>
 
 /*******************************************************************************
     This module defines the interface to synthesize Boolean chains from
