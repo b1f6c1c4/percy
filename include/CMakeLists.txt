@@ -1,9 +1,9 @@
 add_library(percy INTERFACE)
 
-target_include_directories(percy INTERFACE ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(percy SYSTEM INTERFACE ${PROJECT_SOURCE_DIR}/include)
 
 if (${PERCY_BUILD_CMS})
-    target_include_directories(percy INTERFACE ${CMS_INCLUDE_DIR})
+    target_include_directories(percy SYSTEM INTERFACE ${CMS_INCLUDE_DIR})
     add_dependencies(percy libcryptominisat5)
 endif()
 
